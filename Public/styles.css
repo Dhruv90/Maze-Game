@@ -1,0 +1,110 @@
+body {
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(-45deg, #EE7752, #800080, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+
+td {
+    border-top: 1px solid #FFFFF0;
+    border-right: 1px solid #FFFFF0;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+table{
+    border: 1px solid #FFFFF0; 
+    padding: 0;
+    border-collapse: collapse;
+    margin: auto;
+    width: 30vw;
+    height: 30vw;
+}
+span {
+    text-align: center;
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+}
+
+tr:last-child td:last-child{
+    background-image: url(./images/fingers.png);
+    background-size: contain;
+    z-index: 3;
+}
+
+.player-img {
+    background-image: url(./images/joint.png);
+    background-size: contain;
+    z-index: 3;
+}
+
+#mazeContainer {
+    margin: auto;
+    width: 50%;
+}
+
+form {
+    margin: 0 auto;
+}
+
+#select{
+    text-align: center;
+}
+
+
+#show-message{
+    display: none;
+    z-index: 10;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    /* margin: auto; */
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+#message{
+    color: black;
+    text-align: center;
+    display: inline-block;
+    width: 20vh;
+    /* margin-left: 40vh; */
+    margin-top: 25vh;
+    background-color: lightcoral;
+    border: 2px solid darkgrey;
+    border-radius: 5px;
+    z-index: 30;
+}
+
+#show-loading{
+    display: none;
+    z-index: 10;
+    margin: auto;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    text-align: center;
+}
+
+
+
+

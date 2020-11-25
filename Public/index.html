@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Maze Project</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src='maze.js' defer></script>
+    </head>
+    <body>
+        <div id='show-message'>
+            <div id='message'>
+                <h3>Complete</h3>
+                <p></p>
+                <button id='message-btn' type='button'>Ok</button>
+                <br>
+            </div>
+        </div>
+        <div id='show-loading'>
+            <h3>Loading...</h3>
+        </div>
+        <header>
+            <br>
+            <br>
+            <h1>The Maze</h1>
+        </header>
+        <div id = 'select'>
+            <form> Set difficulty
+                <select name="difficulty" id="difficulty">
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                </select>
+                <button type="button">Start Game</button>
+            </form>
+        </div>
+        <br> <br>
+        <div id='mazeContainer'></div>
+    </body>
+</html>
